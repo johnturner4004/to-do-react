@@ -1,8 +1,9 @@
-import './TaskList.css'
+import "./TaskList.css";
+import TaskDetails from '../TaskDetails/TaskDetails'
 
-function TaskList( props ) {
-  let taskArray = props;
-  console.log('task array in taskList',taskArray);
+function TaskList(props) {
+  let taskArray = props.taskArray;
+  // console.log("task array in taskList", taskArray);
   return (
     <div className="taskList">
       <div className="sidebar glass">
@@ -10,7 +11,15 @@ function TaskList( props ) {
         <div className="sidebarSpacer"></div>
       </div>
       <div className="glass tasks">
-        <h1>Tasks</h1>
+        {taskArray ? taskArray.map( details => {
+          // {console.log('Details',details);}
+          return(
+          <div className="glass taskBox" key={details.id}>
+            <TaskDetails details={details}/>
+          </div>
+          )
+          }) : <div>Not loaded</div>
+        }
       </div>
     </div>
   );

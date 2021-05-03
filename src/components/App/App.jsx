@@ -15,16 +15,16 @@ function App() {
     axios
       .get('/task')
       .then((response) => {
-        console.log('Retrieved task list from server', response);
+        // console.log('Retrieved task list from server', response);
         setTaskArray(response.data);
       })
-      // .catch((error) => {
-      //   console.log('Error getting task list from server', error);
-      //   alert('Unable to get to-do list from server');
-      // });
-    taskArray
-      ? console.log('tasks', taskArray)
-      : console.log('taskArray not ready');
+      .catch((error) => {
+        console.log('Error getting task list from server', error);
+        alert('Unable to get to-do list from server');
+      });
+    // taskArray
+    //   ? console.log('tasks', taskArray)
+    //   : console.log('taskArray not ready');
   };
 
   return (
