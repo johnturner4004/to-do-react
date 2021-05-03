@@ -1,6 +1,8 @@
 import './TaskList.css'
 
-function TaskList() {
+function TaskList( props ) {
+  let taskArray = props;
+  console.log('task array in taskList',taskArray);
   return (
     <div className="taskList">
       <div className="sidebar glass">

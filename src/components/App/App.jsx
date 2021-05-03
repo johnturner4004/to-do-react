@@ -30,7 +30,7 @@ function App() {
   return (
     <>
       <Header />
-      <TaskList />
+      <TaskList taskArray={taskArray}/>
     </>
   );
 }
