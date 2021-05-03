@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  text-align: center;
+  background-color: #259A40;
+  height: 150px;
+  width: 150px;
+  line-height: .8;
+}
+
+#hashtag{
+  font-size: 8rem;
+  width: 150px;
+}
+
+.next-task {
+  height: 150px;
+  width: 100%;
+}
