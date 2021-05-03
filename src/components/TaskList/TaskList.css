@@ -1,0 +1,23 @@
+.taskList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+}
+
+.sidebar {
+  width: 150px;
+  padding: 0;
+  height: 100%;
+  min-height: 75vh;
+}
+
+.sidebarSpacer {
+  width: 150px;
+}
+
+.tasks {
+  height: 100%;
+  min-height: 75vh;
+  width: 100%;
+}

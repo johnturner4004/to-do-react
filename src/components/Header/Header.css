@@ -9,13 +9,11 @@ header {
   height: 150px;
   width: 150px;
   line-height: .8;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
 }
 
 #hashtag{
   font-size: 8rem;
+  width: 150px;
 }
 
 .next-task {
