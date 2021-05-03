@@ -8,7 +8,7 @@ function TaskDetails(props) {
         <p>{details.description}</p>
       </div>
       <div className="time">
-        <p>Time added: {details.time_added} Time due:{details.due_date}</p>
+        <p>Due by:{details.due_date} Time left: {details.remaining}</p>
       </div>
     </div>
   );
