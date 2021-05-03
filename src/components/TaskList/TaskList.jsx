@@ -3,7 +3,6 @@ import TaskDetails from '../TaskDetails/TaskDetails'
 
 function TaskList(props) {
   let taskArray = props.taskArray;
-  // console.log("task array in taskList", taskArray);
   return (
     <div className="taskList">
       <div className="sidebar glass">
@@ -12,7 +11,6 @@ function TaskList(props) {
       </div>
       <div className="glass tasks">
         {taskArray ? taskArray.map( details => {
-          // {console.log('Details',details);}
           return(
           <div className="glass taskBox" key={details.id}>
             <TaskDetails details={details}/>

@@ -15,9 +15,7 @@ router.get('/', (req, res) => {
       due = moment(due).format('hh:mm MM/DD/YYYY');
       value.due_date = due;
       let remaining = moment(value.due_date).diff(moment());
-      console.log('remaining', remaining);
       remaining = moment.duration(remaining);
-      console.log('remaining', remaining);
       let years = remaining.years(), months = remaining.months(), days = remaining.days(), hours = remaining.hours(), minutes = remaining.minutes(), seconds = remaining.seconds();
       let output = '';
       years ? output+= years + ' years ' : '';
@@ -28,7 +26,6 @@ router.get('/', (req, res) => {
       seconds > 9 ? output+= seconds : seconds ? output+= '0' + seconds : output+= '00';
       value.remaining = output;
     }
-    console.log('Got list from database', result);
     res.send(result.rows);
   })
   .catch(error => {

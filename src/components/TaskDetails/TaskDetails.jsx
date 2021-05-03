@@ -1,6 +1,5 @@
 function TaskDetails(props) {
   let details = props.details;
-  console.log("in TaskDetails", details);
   return (
     <div className="details">
       <div className="detailsText">
