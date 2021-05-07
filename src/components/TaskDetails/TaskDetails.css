@@ -1,0 +1,103 @@
+.details {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.detailsText {
+  height: 150px;
+  width:60%;
+}
+
+.time {
+  height: 150px;
+  width: 20%;
+  border-left: 1px solid #80808080;
+  border-right: 1px solid #80808080;
+}
+
+.taskButtons{
+  height: 150px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskButtons button {
+  width: 141px;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#del {
+  background-color: #B3001B;
+  color: papayawhip;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+#del:hover {
+  background-color: #8D0015;
+}
+
+#del:active {
+  border: 3px solid #C9001E;
+  transition: none;
+}
+
+.flex{
+  margin: 10px 0;
+  
+}
+
+.onoffswitch {
+  position: relative; width: 141px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 50px;
+}
+.onoffswitch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; float: left; width: 50%; height: 35px; padding: 0; line-height: 35px;
+  font-size: 20px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+  content: "#done";
+  padding-left: 10px;
+  background-color: #FFEFD5; color: #259A40;
+}
+.onoffswitch-inner:after {
+  content: "#notDone";
+  padding-right: 10px;
+  background-color: #259A40; color: #FFEFD5;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block; width: 33px; margin: 1px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 102px;
+  border: 2px solid #999999; border-radius: 50px;
+  transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; 
+}

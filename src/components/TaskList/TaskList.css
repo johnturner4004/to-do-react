@@ -21,3 +21,7 @@
   min-height: 75vh;
   width: 100%;
 }
+
+.taskBox {
+  height: 150px;
+}
